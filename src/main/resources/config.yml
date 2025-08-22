@@ -1,0 +1,55 @@
+auto-ativar: true  # Define se os bloqueios serão ativados automaticamente ao iniciar o servidor
+
+# Lista de mundos onde o plugin irá funcionar
+# Nesse caso os MUNDOS que ele vai bloquear se não tiver listado ai ele não bloqueia
+mundos-permitidos:
+  - "world"
+  - "world_nether"
+  - "mundo_pvp"
+  
+# Configurações de bloqueio de itens e blocos
+# Mantenha true caso deseja que o jogador não intereja com esse item
+# Ou false caso queira que ele intereja, em breve coloco mais itens ai!
+bloqueios:
+  bau:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para abrir baús!"
+  craftingtable:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar bancadas de trabalho!"
+  bigorna:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar bigornas!"
+  pistao:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar pistões!"
+  alavanca:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar alavancas!"
+  botao:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar botões!"
+  placas:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar placas de pressão!"
+  redstone:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar redstone!"
+  tnt:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar TNT!"
+  dispensador:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar dispensadores!"
+  dropper:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar droppers!"
+  funil:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar funis!"
+  portao:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar portões!"
+  porta:
+    ativado: true
+    mensagem: "&cVocê não tem permissão para usar portas!"

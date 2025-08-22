@@ -1,0 +1,68 @@
+name: BloquearItens
+version: '${project.version}'
+main: com.voidplugins.bloquearitens.BloquearItens
+api-version: 1.8.8
+authors: [VoidPlugins]
+description: Plugin para bloquear uso de itens e blocos
+
+permissions:
+  bloquearitens.bypass.*:
+    description: Permite usar todos os itens e blocos bloqueados
+    default: op
+    children:
+      bloquearitens.bypass.bau: true
+      bloquearitens.bypass.craftingtable: true
+      bloquearitens.bypass.bigorna: true
+      bloquearitens.bypass.pistao: true
+      bloquearitens.bypass.alavanca: true
+      bloquearitens.bypass.botao: true
+      bloquearitens.bypass.placas: true
+      bloquearitens.bypass.redstone: true
+      bloquearitens.bypass.tnt: true
+      bloquearitens.bypass.dispensador: true
+      bloquearitens.bypass.dropper: true
+      bloquearitens.bypass.funil: true
+      bloquearitens.bypass.portao: true
+      bloquearitens.bypass.porta: true
+  bloquearitens.bypass.bau:
+    description: Permite abrir baús
+    default: false
+  bloquearitens.bypass.craftingtable:
+    description: Permite usar bancadas de trabalho
+    default: false
+  bloquearitens.bypass.bigorna:
+    description: Permite usar bigornas
+    default: false
+  bloquearitens.bypass.pistao:
+    description: Permite usar pistões
+    default: false
+  bloquearitens.bypass.alavanca:
+    description: Permite usar alavancas
+    default: false
+  bloquearitens.bypass.botao:
+    description: Permite usar botões
+    default: false
+  bloquearitens.bypass.placas:
+    description: Permite usar placas de pressão
+    default: false
+  bloquearitens.bypass.redstone:
+    description: Permite usar redstone
+    default: false
+  bloquearitens.bypass.tnt:
+    description: Permite usar TNT
+    default: false
+  bloquearitens.bypass.dispensador:
+    description: Permite usar dispensadores
+    default: false
+  bloquearitens.bypass.dropper:
+    description: Permite usar droppers
+    default: false
+  bloquearitens.bypass.funil:
+    description: Permite usar funis
+    default: false
+  bloquearitens.bypass.portao:
+    description: Permite usar portões
+    default: false
+  bloquearitens.bypass.porta:
+    description: Permite usar portas
+    default: false
