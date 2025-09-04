@@ -11,31 +11,11 @@ public class BloquearItens extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        
-        try {
-            this.configManager = new ConfigManager(this);
-            getServer().getPluginManager().registerEvents(new BlockListener(this), this);
-            
-            getLogger().info("Plugin ativado com sucesso!");
-            getLogger().info("Recursos carregados:");
-            getLogger().info(" - Sistema de bloqueio de baús");
-            getLogger().info(" - Sistema de bloqueio de bancadas");
-            getLogger().info(" - Sistema de bloqueio de bigornas");
-            getLogger().info(" - Sistema de bloqueio de pistões");
-            getLogger().info(" - Sistema de bloqueio de alavancas");
-            getLogger().info(" - Sistema de bloqueio de botões");
-            getLogger().info(" - Sistema de bloqueio de placas");
-            
-        } catch (Exception e) {
-            getLogger().severe("Erro ao inicializar: " + e.getMessage());
-            e.printStackTrace();
-            getServer().getPluginManager().disablePlugin(this);
-        }
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("Plugin desativado!");
+        getLogger().info("Desativado");
     }
 
     public static BloquearItens getInstance() {
@@ -48,6 +28,6 @@ public class BloquearItens extends JavaPlugin {
 
     public void reloadPlugin() {
         configManager.reloadConfig();
-        getLogger().info("Configurações recarregadas!");
     }
+
 }
